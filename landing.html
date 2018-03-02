@@ -35,6 +35,7 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <link href="css/modal-style.css" rel="stylesheet">
       <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+      <script src="js/verify.js"></script>
       
   </head>
 
@@ -44,43 +45,20 @@
       <div class = "modal" id = "mymodal">
       <div class="container">
     	<div class="row">
-            <div class = "col-md-3">
+            <div class = "col-md-3 exit">
                 <!--to center the modal, offset not working for some reason-->
             </div>
 			<div class="col-md-6">
+                
+                <div class = "spacer exit">
+                </div>
 				<div class = "modal-content panel-login">
-                    <div class = "modal-header panel-heading">
-                        <a class = 'active'>Register</a>
-                    </div>
                     <div class = "modal-body">
-                        <div class = "register-form">
-                            <p class = "error" id = "used">Email / Phone number already in use</p>
-                            <p class = "error" id = "missing">Please fill out all the blanks.</p>
-                            <p class = "error" id = "invalid">Please use a valid email.</p>
-                            <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Email Address">
-                            <input type="password" name="email" id="pass" tabindex="3" class="form-control" placeholder="Password">
-                            <input type="number" name="email" id="phone" tabindex="2" class="form-control" placeholder="Phone Number">
-                            
-                            <ul class = "inline checkDiv">
-                                <li class = "list-inline-item">
-                                    <input type = "checkbox" id = "notifs">
-                                    </li>
-                                <li class = "list-inline-item">
-                                    <p class = "checkP">Send me emails about app updates
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class = "success">
-                            <p>Registration Success!</p>
-                        </div>
-                    </div>
-                    <div class = "modal-footer">
-                        <input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-register" value="Register Now">
+                        <a>Download not yet available!</a>
                     </div>
                 </div>
 			</div>
-            <div class = "col-md-2">
+            <div class = "col-md-3 exit">
                 <!--to center the modal, offset not working for some reason-->
             </div>
 		</div>
@@ -107,10 +85,13 @@
               <a class="nav-link js-scroll-trigger" href="#features">Features</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#download">Register</a>
+              <a class="nav-link js-scroll-trigger" href="#download">Download</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#logout" id = "logout">Log Out</a>
             </li>
           </ul>
         </div>
@@ -123,7 +104,7 @@
           <div class="col-lg-7 my-auto">
             <div class="header-content mx-auto">
               <h1 class="mb-5"><strong>BetKo</strong> : A better way of betting!</h1>
-              <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">Pre Register now!</a>
+              <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">Download</a>
             </div>
           </div>
           <div class="col-lg-5 my-auto">
@@ -248,15 +229,15 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8 mx-auto">
-            <h2 class="section-heading">Pre Register today!</h2>
-            <p>You will be notified when the app goes live!</p>
+            <h2 class="section-heading">Downloads available soon!</h2>
+            <p>You will be notified on your email when the app goes live!</p>
             <div class="badges">
                 
-                <button class = "btn" id = "regBtn">Register</button>
+                <div class="badges">
+                  <a class="badge-link"><img src="img/google-play-badge.svg" alt=""></a>
+                  <a class="badge-link"><img src="img/app-store-badge.svg" alt=""></a>
+                </div>
                 
-                <!-- app store badges
-              <a class="badge-link"><img src="img/google-play-badge.svg" alt="" id='xd'></a>
-              <a class="badge-link overlay" href="#"><img src="img/app-store-badge.svg" alt="" clickable=false></a>-->
             </div>
           </div>
         </div>

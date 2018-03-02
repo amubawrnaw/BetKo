@@ -403,6 +403,7 @@ footer {
 footer p {
   font-size: 12px;
   margin: 0;
+    
 }
 
 footer ul {
@@ -441,6 +442,10 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   color: white;
   border: 1px solid;
   border-color: white;
+}
+
+.badge-link{
+    cursor:pointer;
 }
 
 .btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
@@ -490,4 +495,10 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 #regBtn:hover{
     color:#117ee8;
     background: #eeefff;
+}
+.login{
+    margin-top:5px;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 14px;
 }
