@@ -466,7 +466,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   padding: 15px 45px;
 }
 .logoNavBar{
-    background:url(/../img/betko_logo.png);
+    background:url("../img/betko_logo.png");
     height:44px;
     width:80px;
 }
