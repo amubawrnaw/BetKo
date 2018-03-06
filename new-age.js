@@ -62,6 +62,11 @@
         hideErrors();
         //login
         if(index == 0){
+            //handles event if user reg -> login -> back to reg
+            if($("#submit-form").val() == "OK"){
+                resetReg();
+            }
+            
             $("#regTab").removeClass("active");
             $("#loginTab").addClass("active");
             
@@ -95,7 +100,6 @@
         var btn = $(this).val();
         hideErrors();
         if(btn == "Register"){
-            console.log("sumulod");
             var user = $("#user").val();
             var email = $("#email").val();
             var pass = $("#pass").val();
@@ -103,7 +107,6 @@
             var phone = $("#phone").val();
             var check = $("#notifs").is(":checked");
             
-            console.log(validateEmail(email));
             if(pass != pass2){
                 $("#mismatch").css("display", "block");
             }else if(email == "" || pass == "" || phone == "" || pass2 == "" || user == ""){
@@ -184,23 +187,27 @@
         $("#mymodal").modal('hide');
     });
     
+    function resetReg(){
+        hideErrors();
+            
+        $(".register-form").css("display", "block");
+        $(".success").css("display","none");
+        $("#submit-form").val("Register");
+
+        //reset values
+        $("#email").val("");
+        $("#pass").val("");
+        $("#phone").val("");
+        $("#pass2").val("");
+        $("#user").val("");
+        $("#notifs").prop('checked',false);
+    }
+    
     //resets modal view on exit;
     $("#mymodal").on('hidden.bs.modal', function(){
         if($("#submit-form").val() == "OK"){
             //reset view
-            hideErrors();
-            
-            $(".register-form").css("display", "block");
-            $(".success").css("display","none");
-            $("#submit-form").val("Register");
-            
-            //reset values
-            $("#email").val("");
-            $("#pass").val("");
-            $("#phone").val("");
-            $("#pass2").val("");
-            $("#user").val("");
-            $("#notifs").prop('checked',false);
+            resetReg();
         }
     });
     

@@ -28,6 +28,18 @@
 font-style: normal;
 }
 
+@media(max-width:992px){
+    [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+    [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+        font-family: Flaticon;
+        font-size: 30px;
+        font-style: normal;
+    }
+}
+
+
+
+
 .flaticon-phone-call:before { content: "\f100"; }
 .flaticon-placeholder:before { content: "\f101"; }
 .flaticon-envelope:before { content: "\f102"; }
