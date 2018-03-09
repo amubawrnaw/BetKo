@@ -48,9 +48,11 @@
         },200);
     });
     $(".login").click(function(){
-        $('.navbar-collapse').collapse('hide');
-        $("#mymodal").modal('show');
-        openModal(0);
+        setTimeout(function(){
+            $('.navbar-collapse').collapse('hide');
+            $("#mymodal").modal('show');
+            openModal(0);
+        },200);
     });
     $("#regTab").click(function(){
         openModal(1);
