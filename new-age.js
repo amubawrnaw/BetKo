@@ -48,6 +48,7 @@
         },200);
     });
     $(".login").click(function(){
+        $('.navbar-collapse').collapse('hide');
         $("#mymodal").modal('show');
         openModal(0);
     });

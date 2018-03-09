@@ -8,17 +8,6 @@ body {
   font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
 }
 
-a {
-  color: #fdcc52;
-  -webkit-transition: all .35s;
-  -moz-transition: all .35s;
-  transition: all .35s;
-}
-
-a:hover, a:focus {
-  color: #fcbd20;
-}
-
 hr {
   max-width: 100px;
   margin: 25px auto 0;
@@ -500,6 +489,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
     background: #eeefff;
 }
 .login{
+    color:#000;
     margin-top:5px;
     text-decoration: underline;
     cursor: pointer;
