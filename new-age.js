@@ -42,8 +42,10 @@
 		e.preventDefault();
 	});
     $('#regBtn').click(function(){
-        $("#mymodal").modal('show');
-        openModal(1);
+        setTimeout(function(){
+            $("#mymodal").modal('show');
+            openModal(1);
+        },200);
     });
     $(".login").click(function(){
         $("#mymodal").modal('show');
@@ -95,7 +97,6 @@
         document.cookie =  "user=''; expires=Thu, 18 Dec 2013 12:00:00 UTC";
         window.location.reload();
     });
-    
     $("#submit-form").click(function(){
         var btn = $(this).val();
         hideErrors();

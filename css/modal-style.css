@@ -6,7 +6,6 @@
 }
 .spacer{
     width:100%;
-    height:100px;
 }
 .panel-login>.panel-heading {
 	color: #00415d;
@@ -100,8 +99,9 @@
         font-size: 10px;
     }
 }
-
-
+#mymodal{
+    position:absolute;
+}
 
 
 
