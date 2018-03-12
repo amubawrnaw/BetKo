@@ -149,17 +149,10 @@
       </div>
     </section>
       
-    <section class="download text-center bg-secondary" id="download">
+    <section class="download text-center bg-secondary" id="download" role="dialog">
         
-        <div class = "modal" id = "mymodal">
-      <div class="container">
-    	<div class="row">
-            <div class = "col-md-3 exit">
-                <!--to center the modal, offset not working for some reason-->
-            </div>
-			<div class="col-md-6">
-                <div class = "spacer exit">
-                </div>
+    <div class = "modal fade" id = "mymodal">
+        <div class = "modal-dialog">
 				<div class = "modal-content panel-login">
                     <div class = "modal-header panel-heading">
                         <div class = "row">
@@ -170,6 +163,7 @@
                                 <a id = 'regTab'>Register</a>
                             </div>
                         </div>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <div class = "modal-body">
                         <p class = "error" id = "used">Username / Email / Phone number already in use</p>
@@ -210,11 +204,6 @@
                         <input type="submit" name="register-submit" id="submit-form" tabindex="7" class="form-control btn btn-modal" value="Register Now">
                     </div>
                 </div>
-			</div>
-            <div class = "col-md-3 exit">
-                <!--to center the modal, offset not working for some reason-->
-            </div>
-		</div>
 	</div>
     </div>
         
